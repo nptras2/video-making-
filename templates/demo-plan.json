@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "title": "Engine Demo",
+  "format": {"ratio": "16:9", "width": 1920, "height": 1080, "fps": 30},
+  "duration": 7,
+  "style": "cinematic",
+  "defaultTransition": {"type": "dissolve", "duration": 0.5},
+  "scenes": [
+    {
+      "id": "s1-title",
+      "type": "title",
+      "start": 0,
+      "duration": 2.5,
+      "purpose": "hook",
+      "text": [
+        {"role": "title", "text": "One Engine Every Format", "emphasis": ["Engine"]},
+        {"role": "subtitle", "text": "Video · Audio · Images · Script · Prompt"}
+      ]
+    },
+    {
+      "id": "s2-scene",
+      "type": "two-d",
+      "start": 2.5,
+      "duration": 2.5,
+      "camera": "pan-right",
+      "visual": "Night coastline with a lit lighthouse and a lone figure",
+      "layers": [
+        {"asset": "sky", "depth": 0, "color": "#0d1424"},
+        {"asset": "stars", "depth": 0.05},
+        {"asset": "moon", "depth": 0.1},
+        {"asset": "sea", "depth": 0.35},
+        {"asset": "field", "depth": 0.75, "color": "#08110f"}
+      ],
+      "data": {
+        "character": {"x": 0.3, "y": 0.14, "scale": 0.8, "tone": "silhouette"},
+        "effects": "fireflies"
+      },
+      "text": [{"role": "title", "text": "A story, generated", "y": 0.24}]
+    },
+    {
+      "id": "s3-3d",
+      "type": "three-d",
+      "start": 5,
+      "duration": 2,
+      "purpose": "payoff",
+      "data": {"shape": "torus", "count": 10, "spread": 3.4, "glow": true, "variant": "orbit"},
+      "text": [{"role": "title", "text": "3D MOTION", "y": 0.82, "size": 72}]
+    }
+  ],
+  "audio": [],
+  "overlays": [
+    {"id": "ov-progress", "kind": "progress", "start": 0, "duration": 7}
+  ],
+  "captions": {"style": {"mode": "word"}, "cues": []}
+}

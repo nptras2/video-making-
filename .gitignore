@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# secrets — never commit keys
+.env
+.env.local
+.env.*.local
+
+# generated media / run artifacts
+projects/
+outputs/
+out/
+.remotion/
+
+# whisper.cpp binary + models installed at runtime
+node_modules/.whisper/
+
+# local material drop folder
+input/*
+!input/.gitkeep
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.log
+
+tools/blender.zip
+tools/blender-5.2.3-windows-x64/
